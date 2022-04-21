@@ -1,5 +1,5 @@
 package strategyPattern;
 
 public interface SortStrategy {
-    void algorithm();
+    void sort();
 }
