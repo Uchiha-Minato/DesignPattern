@@ -1,5 +1,7 @@
 package strategyPattern;
 
+import java.util.Arrays;
+
 public class HeapSort implements ISortStrategy{
     @Override
     public int[] sort(int[] arr) {
@@ -55,6 +57,7 @@ public class HeapSort implements ISortStrategy{
             } else {  //不用交换，直接终止循环
                 break;
             }
+            System.out.println(Arrays.toString(array));
         }
     }
     /**

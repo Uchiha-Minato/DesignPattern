@@ -12,6 +12,9 @@ public class BubbleSort implements ISortStrategy{
         }catch (InterruptedException e){
             e.printStackTrace();
         }
+
+        int switchTimes = 0;
+
         for(int i = 0; i < arr.length - 1; i++){
             for(int j = 0 ; j < arr.length - i - 1; j++){
                 if(arr[j] > arr[j+1]){
@@ -19,9 +22,11 @@ public class BubbleSort implements ISortStrategy{
                     arr[j] = arr[j+1];
                     arr[j+1] = tmp;
                 }
-                System.out.print("第"+(i+1)+"次排序结果为:");
+                switchTimes++;
+                System.out.print("第"+switchTimes+"次排序结果为:");
                 System.out.println(Arrays.toString(arr));
             }
+
         }
         System.out.println("冒泡排序完成");
         return arr;
