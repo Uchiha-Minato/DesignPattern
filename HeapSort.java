@@ -24,6 +24,7 @@ public class HeapSort implements ISortStrategy{
             // 而这里，实质上是自上而下，自左向右进行调整的
             adjustHeap(array, 0, j);
         }
+        System.out.println("堆排序完成");
     }
     /**
      * 整个堆排序最关键的地方
