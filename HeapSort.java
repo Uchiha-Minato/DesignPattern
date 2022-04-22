@@ -3,6 +3,12 @@ package strategyPattern;
 public class HeapSort implements ISortStrategy{
     @Override
     public int[] sort(int[] arr) {
+        System.out.println("准备开始堆排序...");
+        try{
+            Thread.sleep(1500);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
         heapSort(arr);
         return arr;
     }

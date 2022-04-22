@@ -6,10 +6,12 @@ public class BubbleSort implements ISortStrategy{
     @Override
     public int[] sort(int[] arr) {
 
-        System.out.print("输入的数组为:");
-        System.out.println(Arrays.toString(arr));
         System.out.println("准备开始冒泡排序...");
-
+        try{
+            Thread.sleep(1500);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
         for(int i = 0; i < arr.length - 1; i++){
             for(int j = 0 ; j < arr.length - i - 1; j++){
                 if(arr[j] > arr[j+1]){
@@ -21,6 +23,7 @@ public class BubbleSort implements ISortStrategy{
                 System.out.println(Arrays.toString(arr));
             }
         }
+        System.out.println("冒泡排序完成");
         return arr;
     }
 }

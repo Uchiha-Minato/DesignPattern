@@ -5,6 +5,12 @@ import java.util.Arrays;
 public class MergeSort implements ISortStrategy{
     @Override
     public int[] sort(int[] arr) {
+        System.out.println("准备开始归并排序...");
+        try{
+            Thread.sleep(1500);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
         mergeSort(arr, 0, arr.length - 1);
         return arr;
     }
