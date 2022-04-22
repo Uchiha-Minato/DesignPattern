@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort implements ISortStrategy{
     @Override
-    public int[] sort(int[] arr) {
+    public void sort(int[] arr) {
         System.out.println("准备开始快速排序...");
         try{
             Thread.sleep(1500);
@@ -13,7 +13,6 @@ public class QuickSort implements ISortStrategy{
         }
         qSort(arr, 0, arr.length - 1);
         System.out.println("快速排序完成");
-        return arr;
     }
 
     private static void qSort(int[] a, int left, int right){

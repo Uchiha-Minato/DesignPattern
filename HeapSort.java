@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HeapSort implements ISortStrategy{
     @Override
-    public int[] sort(int[] arr) {
+    public void sort(int[] arr) {
         System.out.println("准备开始堆排序...");
         try{
             Thread.sleep(1500);
@@ -13,7 +13,6 @@ public class HeapSort implements ISortStrategy{
         }
         heapSort(arr);
         System.out.println("堆排序完成");
-        return arr;
     }
 
     private static void heapSort(int[] array){

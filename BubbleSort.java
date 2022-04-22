@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BubbleSort implements ISortStrategy{
     @Override
-    public int[] sort(int[] arr) {
+    public void sort(int[] arr) {
 
         System.out.println("准备开始冒泡排序...");
         try{
@@ -29,6 +29,5 @@ public class BubbleSort implements ISortStrategy{
 
         }
         System.out.println("冒泡排序完成");
-        return arr;
     }
 }

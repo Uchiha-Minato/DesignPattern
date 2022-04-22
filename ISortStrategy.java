@@ -1,5 +1,5 @@
 package strategyPattern;
 
 public interface ISortStrategy {
-    int[] sort(int[] arr);
+    void sort(int[] arr);
 }
