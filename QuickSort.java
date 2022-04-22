@@ -12,6 +12,7 @@ public class QuickSort implements ISortStrategy{
             e.printStackTrace();
         }
         qSort(arr, 0, arr.length - 1);
+        System.out.println("快速排序完成");
         return arr;
     }
 

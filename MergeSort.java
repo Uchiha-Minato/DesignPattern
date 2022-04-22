@@ -12,6 +12,7 @@ public class MergeSort implements ISortStrategy{
             e.printStackTrace();
         }
         mergeSort(arr, 0, arr.length - 1);
+        System.out.println("归并排序完成");
         return arr;
     }
 
