@@ -4,7 +4,7 @@ import java.io.*;
 
 public class BoardScreen {
 
-    private static final File file = new File("E:\\Files\\DesignPatternEXP\\log.txt");
+    private static final File FILE = new File("E:\\Files\\DesignPatternEXP\\log.txt");
 
     public void open(){
         String str = "打开文本编辑器";
@@ -48,7 +48,7 @@ public class BoardScreen {
      * */
     private static void writeIntoLog(String msg){
         try{
-            FileWriter writer = new FileWriter(file, true);
+            FileWriter writer = new FileWriter(FILE, true);
             writer.write(msg + "\n");
             writer.close();
         }catch (IOException e){
