@@ -1,7 +1,6 @@
 package strategyPattern;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Application {
 
@@ -16,42 +15,30 @@ public class Application {
             e.printStackTrace();
         }
 
-        boolean isContinue = true;
+        //根据数组长度自动判断使用何种算法
+        int length = array.length;
+        if (length >= 1 && length <= 4) {
+            System.out.println("\n数组长度小于等于4，使用冒泡排序:");
+            strategy.setSortStrategy(new BubbleSort());
+            strategy.doSort(array);
+        } else if (length >= 5 && length <=8) {
+            System.out.println("数组长度为" + length + ",使用堆排序");
+            strategy.setSortStrategy(new HeapSort());
+            strategy.doSort(array);
+        } else if (length >= 9 && length <= 15) {
+            System.out.println("数组长度为" + length + ",使用归并排序");
+            strategy.setSortStrategy(new MergeSort());
+            strategy.doSort(array);
+        } else if (length >= 16) {
+            System.out.println("数组长度为" + length + ",大于15,使用快速排序");
+            strategy.setSortStrategy(new QuickSort());
+            strategy.doSort(array);
+        }
 
-        while(isContinue){
-            System.out.println("\n请选择要使用的排序算法：");
-            System.out.println("1.冒泡排序\n2.归并排序\n3.快速排序\n4.堆排序\n");
-            Scanner scanner = new Scanner(System.in);
-            int choose = scanner.nextInt();
-
-            switch (choose){
-                case 1-> {
-                    strategy.setSortStrategy(new BubbleSort());
-                    strategy.doSort(array);
-                    isContinue = false;
-                }
-                case 2-> {
-                    strategy.setSortStrategy(new MergeSort());
-                    strategy.doSort(array);
-                    isContinue = false;
-                }
-                case 3-> {
-                    strategy.setSortStrategy(new QuickSort());
-                    strategy.doSort(array);
-                    isContinue = false;
-                }
-                case 4-> {
-                    strategy.setSortStrategy(new HeapSort());
-                    strategy.doSort(array);
-                    isContinue = false;
-                }
-                default -> System.out.println("输入错误，请重新输入一个数");
-            }
-            try{
-                Thread.sleep(1000);
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
+        try{
+            Thread.sleep(1000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
         }
 
     }
