@@ -30,7 +30,7 @@ public class BoardScreen {
     public void printLog(){
         System.out.println("打印当前日志");
         try{
-            FileReader fr = new FileReader("E:\\Files\\DesignPatternEXP\\log.txt");
+            FileReader fr = new FileReader("E:\\Files\\2022spring\\DesignPatternEXP\\EXP1\\log.txt");
             BufferedReader br = new BufferedReader(fr);
 
             String str;
