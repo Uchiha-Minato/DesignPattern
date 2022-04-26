@@ -4,7 +4,7 @@ import java.io.*;
 
 public class BoardScreen {
 
-    private static final File FILE = new File("E:\\Files\\DesignPatternEXP\\log.txt");
+    private static final File FILE = new File("E:\\Files\\2022spring\\DesignPatternEXP\\EXP1\\log.txt");
 
     public void open(){
         String str = "打开文本编辑器";
