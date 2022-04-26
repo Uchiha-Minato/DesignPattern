@@ -31,8 +31,8 @@ public class HeapSort implements ISortStrategy{
             // 接下来我们需要排序的，就是已经去掉了部分元素的堆了，这也是为什么此方法放在循环里的原因
             // 而这里，实质上是自上而下，自左向右进行调整的
             adjustHeap(array, 0, j);
+            System.out.println(Arrays.toString(array));
         }
-
     }
     /**
      * 整个堆排序最关键的地方
@@ -56,7 +56,7 @@ public class HeapSort implements ISortStrategy{
             } else {  //不用交换，直接终止循环
                 break;
             }
-            System.out.println(Arrays.toString(array));
+
         }
     }
     /**
