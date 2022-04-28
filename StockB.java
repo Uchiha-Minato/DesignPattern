@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Concrete Subject
+ * 具体主题
+ * */
 public class StockB extends Stock{
 
     private final List<Observer> observerB = new ArrayList<>();//购买了股票B的股民

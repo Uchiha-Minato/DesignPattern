@@ -1,5 +1,9 @@
 package observerPattern;
 
+/**
+ * Concrete Observer
+ * 具体观察者
+ * */
 public class ObserverB extends Observer{
 
     private final StockB stockB;

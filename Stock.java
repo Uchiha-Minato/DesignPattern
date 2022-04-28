@@ -1,5 +1,9 @@
 package observerPattern;
 
+/**
+ * Abstract Subject
+ * 抽象主题
+ * */
 public abstract class Stock {
 
     public int price;
