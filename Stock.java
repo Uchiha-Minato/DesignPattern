@@ -2,7 +2,7 @@ package observerPattern;
 
 public abstract class Stock {
 
-    private int price;
+    public int price;
 
     public int getPrice() {
         return price;
@@ -16,4 +16,9 @@ public abstract class Stock {
     public abstract void addObserver(Observer observer);
 
     public abstract void notifyObserver();
+
+    /**
+     * 查看股票历史价格
+     * */
+    public abstract String getPriceHistory();
 }
