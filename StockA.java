@@ -24,8 +24,8 @@ public class StockA extends Stock{
         pricesA.addLast(price);
         if (pricesA.size() >= 2){
             float justPrice = pricesA.get(pricesA.size()-2);
-            float percent = Math.abs( ((justPrice - price)/justPrice)*100);
-            if (percent >= 5){
+            float percent = ((price - justPrice)/justPrice)*100;
+            if (Math.abs(percent) >= 5){
                 for (Observer observer : observerA){
                     observer.update((int)percent);
                 }
