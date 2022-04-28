@@ -4,6 +4,6 @@ public abstract class Observer {
 
     //public Stock stock;
 
-    public abstract void update();
+    public abstract void update(int priceChange);
 
 }

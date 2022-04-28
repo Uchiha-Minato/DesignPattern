@@ -8,8 +8,10 @@ public class ObserverB extends Observer{
         this.stockB.addObserver(this);
     }
     @Override
-    public void update() {
-        System.out.println("StockB price has changed for "+
-                stockB.getPrice() + " percents.");
+    public void update(int priceChange) {
+        System.out.println("Message ObserverB has received:");
+        System.out.println("StockB price has changed for " +
+                priceChange + " percents.");
+        System.out.println("Now the price of StockB is " + stockB.getPrice());
     }
 }
