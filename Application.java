@@ -9,9 +9,20 @@ public class Application {
         China china = new China("China", wto);
         Russia russia = new Russia("Russia", wto);
         UnitedKingdom uk = new UnitedKingdom("UnitedKingdom", who);
+        UnitedStates usa = new UnitedStates("USA", who);
 
         china.sendMsg("牛逼");
         russia.sendMsg("乌拉");
-        uk.sendMsg("寄");
+        uk.sendMsg("大本钟下寄快递");
+        usa.sendMsg("上面开摆下面寄");
+
+        System.out.println("WTO与会成员国: ");
+        for (Country country : wto.countries){
+            System.out.print(country.getName() + "\t");
+        }
+        System.out.println("\nWHO与会成员国: ");
+        for (Country country : who.countries){
+            System.out.print(country.getName() + "\t");
+        }
     }
 }

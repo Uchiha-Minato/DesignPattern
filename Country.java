@@ -1,5 +1,9 @@
 package mediatorPattern;
 
+/**
+ * Abstract Colleague
+ * 抽象同事
+ * */
 public abstract class Country {
 
     public String name;
@@ -8,6 +12,7 @@ public abstract class Country {
     public Country(String name, UnitedNations unitedNations){
         this.name = name;
         this.unitedNations = unitedNations;
+        unitedNations.countries.add(this);
     }
 
     public String getName() {

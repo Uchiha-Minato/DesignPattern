@@ -2,6 +2,10 @@ package mediatorPattern;
 
 import java.util.Date;
 
+/**
+ * Concrete Mediator
+ * 具体中介者
+ * */
 public class WHO extends UnitedNations{
 
     @Override
