@@ -6,4 +6,7 @@ public abstract class UnitedNations {
 
     public ArrayList<Country> countries = new ArrayList<>();
 
+    public abstract void showMsg(Country country, String msg);
+
+
 }
