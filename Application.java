@@ -41,7 +41,7 @@ public class Application {
                     System.out.print("股票B价格设置为");
                     priceChange = scanner.nextInt();
                     stockB.setPrice(priceChange);
-                    System.out.println("当前股票A的价格为 "+ stockB.getPrice() + " 元\n");
+                    System.out.println("当前股票B的价格为 "+ stockB.getPrice() + " 元\n");
                 }
                 case 3 -> {
                     System.out.println("股票A历史价格为 \n" + stockA.getPriceHistory());
