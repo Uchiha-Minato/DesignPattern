@@ -5,7 +5,7 @@ package factoryMethodPattern;
  * */
 public class DatabaseILogFactory implements ILogFactory {
     @Override
-    public ILog creatLog() {
+    public ILog createLog() {
         return new DatabaseLog();
     }
 }

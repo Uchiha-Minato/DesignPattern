@@ -20,11 +20,11 @@ public class Client {
         switch (choose){
             case 1 -> {
                 logFactory = new FileILogFactory();
-                log = logFactory.creatLog();
+                log = logFactory.createLog();
             }
             case 2 -> {
                 logFactory = new DatabaseILogFactory();
-                log = logFactory.creatLog();
+                log = logFactory.createLog();
             }
             default -> System.out.println("输入错误，请重新输入");
         }
