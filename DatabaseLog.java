@@ -1,5 +1,8 @@
 package factoryMethodPattern;
 
+/**
+ * Concrete Product 具体产品
+ * */
 public class DatabaseLog implements ILog{
 
     @Override
