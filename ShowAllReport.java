@@ -5,8 +5,8 @@ package adapter_Bridge;
  * */
 public class ShowAllReport extends ShowReport{
 
-    IDataCollection collection2;
-    IDataCollection collection3;
+    private final IDataCollection collection2;
+    private final IDataCollection collection3;
     protected ShowAllReport(IDataCollection collection1,
                             IDataCollection collection2,
                             IDataCollection collection3) {
