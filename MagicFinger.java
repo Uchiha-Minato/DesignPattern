@@ -8,7 +8,7 @@ public class MagicFinger extends BallIF{
     private static final double PI = 3.14d;
 
     public MagicFinger(Cube adaptee){
-        radius = adaptee.getWidth();
+        radius = adaptee.getWidth() / 2;
     }
 
     @Override
